@@ -113,3 +113,22 @@ class simpleStyle():
 
 getPic=simpleStyle()#创建类的实例
 getPic.get_pic()#执行类中的方法
+
+# for a in all_a:  # 循环每个标签，获取标签中图片的url并且进行网络请求，最后保存图片
+#     img_str = a['style']  # a标签中完整的style字符串
+#     print('a标签的style内容是：', img_str)
+#     first_pos = img_str.index('"') + 1
+#     second_pos = img_str.index('"', first_pos)
+#     img_url = img_str[first_pos: second_pos]  # 使用Python的切片功能截取双引号之间的内容
+#     # 获取高度和宽度的字符在字符串中的位置
+#     width_pos = img_url.index('&w=')
+#     height_pos = img_url.index('&q=')
+#     width_height_str = img_url[width_pos: height_pos]  # 使用切片功能截取高度和宽度参数，后面用来将该参数替换掉
+#     print('高度和宽度数据字符串是：', width_height_str)
+#     img_url_final = img_url.replace(width_height_str, '')  # 把高度和宽度的字符串替换成空字符
+#     print('截取后的图片的url是：', img_url_final)
+#     # 截取url中参数前面、网址后面的字符串为图片名
+#     name_start_pos = img_url.index('photo')
+#     name_end_pos = img_url.index('?')
+#     img_name = img_url[name_start_pos: name_end_pos]
+#     self.save_img(img_url_final, img_name)  # 调用save_img方法来保存图片
